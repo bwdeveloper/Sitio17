@@ -1,0 +1,108 @@
+
+
+.logo div{
+	height: 30px;
+	width: 30px;
+	margin: 2px;
+}
+.logo{
+	display: flex;
+	flex-wrap: wrap;
+	max-width: 100px;
+	align-items: center;
+}
+
+.rojo{
+	background-color: red;
+
+}
+.verde{
+	background-color: green;
+}
+.azul{
+	background-color: blue;
+}
+.amarillo{
+	background-color: yellow;
+}
+.cuadrado{
+	height: 150px;
+	width: 150px;
+	background-color: green;
+	display: inline-block;
+	transition: 1s;
+}
+.cuadrado:hover {
+ 	transform: scale(1.2) rotate(40deg);
+ 	background-color: yellow;
+ 	border-radius: 50%;
+
+}
+
+.redes li{
+	margin: 0px 5px;
+}
+
+
+.redes li span{
+    color: white;
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    background-color: black;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+
+}
+
+.redes li a{
+        text-decoration: none;
+    }
+
+.redes li:hover{
+ transform: scale(1.8) ;
+}
+.redes li span:hover{
+	 background-color: #0288D1;
+}
+
+.redes{
+    display: flex;
+    list-style: none;
+
+}   
+
+@keyframes cambio{
+	0%{
+		background-color: grey;
+		transform: translate(200px, 300px);
+	}
+	25%{
+		background-color: rebeccapurple;
+		border-radius: 50%;
+		transform: rotate(90deg)
+
+		}
+	50%{
+		background-color: orange;
+		transform: scale(2);
+		}
+	75%{
+		background-color: red;
+		transform: scale(0.2) translate(-35px, 100px);
+	}
+	100%{
+		background-color: yellow;
+	}
+}
+.cuadradodos{
+	height: 150px;
+	width: 150px;
+	background-color: white;
+	display: inline-block;
+	animation-name: cambio;
+	animation-duration: 2s;
+	animation-iteration-count: infinite;
+	transition: 1s;
+}
